@@ -1,0 +1,43 @@
+/* Table générale : centrée, police lisible, largeur fixe */
+table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    width: 600px;
+}
+
+
+th, td {
+    border: 1px solid #222;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+/* En-tête : fond noir */
+table tr:first-child th {
+    background: #222;
+    color: #fff;
+}
+
+/* Lignes de données*/
+table tr:nth-child(n+3):nth-child(even) td {
+    background: #eee;
+}
+
+/* Première ligne de données : fond rouge, texte blanc*/
+table tr:nth-child(2) td {
+    background: #c00;
+    color: #fff;
+}
+
+/* Avant-dernière ligne : fond bleu,  */
+table tr:nth-last-child(2) td {
+    background: #03f;
+    color: #fff;
+}
+
+/* Dernière cellule du tableau */
+table tr:last-child td:last-child {
+    background: #d98fd9;
+    color: #222;
+}
